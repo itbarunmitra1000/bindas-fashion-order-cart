@@ -20,19 +20,22 @@
 <body>
   <header></header>
   <main class="main ">
-      <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
-        </button>
-      </div>
+    <!-- search box and button  -->
+    <div class="search-box">
+      <input id="input-field" class="search-field" type="text" />
+      <button type="button" class="search-button" data-toggle="button" aria-pressed="false" autocomplete="off"
+        id="search-btn" onclick="loadProducts()">
+        Search
+      </button>
+    </div>
+    <!-- product display -->
     <div class="row ">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <!-- products card  -->
         <div id="all-products" class="">
         </div>
       </div>
+      <!-- shoping cart display product count and pricelist -->
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
         <div class="cart " id="my-cart">
           <table class="table">
@@ -77,6 +80,7 @@
               </tr>
             </tbody>
           </table>
+          <!-- buy now button  -->
           <div class="parces text-center">
             <button class="btn btn-primary text-center">Buy Now</button>
           </div>
